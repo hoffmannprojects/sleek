@@ -25,6 +25,34 @@
   }
 }
 
+.hero--portfolio {
+  margin: 3.75rem auto 0;
+  min-height: 20.25rem;
+  width: 100%;
+  position: relative;
+  background-color: $light-bg-color;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  //border-top: 1px solid black;
+
+  @include breakpoint($lg) {
+    margin: 0 auto;
+    height: 30em;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 56, 81, .0);
+  }
+}
+
 .hero--small {
   margin: 3.75rem auto 0;
   min-height: 8.75rem;
@@ -50,7 +78,6 @@
 
 .hero__wrap {
   position: absolute;
-  margin: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -70,8 +97,35 @@
 
 
     @include breakpoint($md) {
-      padding: 1rem 0;
       font-size: 2.625em;
+      line-height: 3.125rem;
+    }
+  }
+}
+
+.hero__wrap--portfolio {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 90%;
+  z-index: 1;
+
+  @include breakpoint($md) {
+    max-width: 40em;
+  }
+
+  .hero__title {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: inherit;
+
+
+    @include breakpoint($md) {
+      font-size: 2em;
       line-height: 3.125rem;
     }
   }
@@ -100,4 +154,36 @@
   @include breakpoint($md) {
     padding-top: 5em;
   }
+}
+
+hr {
+  display: block;
+  height: 0px;
+  border: 0;
+  border-bottom: 5px solid #fff;
+  margin: 1em 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 0;
+}
+
+.hero__logo--container {
+  height: 3em;
+  //width: 200px;
+  //margin: 0;
+  //padding:0;
+  //-webkit-margin-before: 0;
+  //-webkit-margin-after: 0;
+  .logo {
+    fill: currentColor;
+  }
+}
+
+.hero__logo--subline {
+  font-size: 1rem;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: .6em;
+  text-align: center;
+  height: 4em;
 }

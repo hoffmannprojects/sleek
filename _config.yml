@@ -1,23 +1,21 @@
 # SITE CONFIGURATION
-title: Sleek # your site title
-author: GitHub User # You :P
+title: Tim Hoffmann # your site title
+author: Tim Hoffmann # You :P
 description: > # Meta description of Homepage
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/sleek" # the subpath of your site, e.g. /blog
-url: "https://janczizikow.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+  Online portfolio of Tim Hoffmann, programmer and producer. Digital games + digital media.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # SEO PLUGIN
 social:
-  name: Your Name
+  name: Tim Hoffmann
   links:
-    - https://twitter.com/BenBalter
-    - https://www.facebook.com/ben.balter
-    - https://www.linkedin.com/in/BenBalter
-    - https://plus.google.com/+BenBalter
-    - https://github.com/benbalter
-    - https://keybase.io/benbalter
+    - https://twitter.com/timdhoffmann
+#    - https://www.facebook.com/ben.balter
+    - https://www.linkedin.com/in/timdhoffmann
+#    - https://plus.google.com/+BenBalter
+    - https://github.com/timdhoffmann
+#    - https://keybase.io/benbalter
 
 # THEME SETTINGS
 navigation: # Navigation links
@@ -26,18 +24,18 @@ navigation: # Navigation links
   - {name: 'Contact', link: '/contact'}
 
 tagline: >
-  Modern Jekyll theme focused on speed performance &amp; SEO best practices
+  Online portfolio of Tim Hoffmann, programmer and producer. Digital games + digital media.
 
 hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
 email: your-email@domain.com # email for form submission
 
-twitter_username: jan_czizikow # replace with your_twitter_username or comment to remove link from footer
-github_username:  janczizikow # replace with your_github_username or comment to remove link from footer
-instagram_username: shanlongjj # replace with your_instagram_username or comment to remove link from footer
+twitter_username: timdhoffmann # replace with your_twitter_username or comment to remove link from footer
+github_username:  timdhoffmann # replace with your_github_username or comment to remove link from footer
+# instagram_username: shanlongjj # replace with your_instagram_username or comment to remove link from footer
 
-disqus:
-  shortname: janczizikow # to enable comments replace with your_disqus_shortname
+# disqus:
+#  shortname: janczizikow # to enable comments replace with your_disqus_shortname
 
 # google_tag_manager: GTM-XXXXXXX # Uncomment to enable GTM. Replace GTM-XXXXXXX with your GTM container ID
 
@@ -69,3 +67,19 @@ compress_html:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Custom collections
+collections:
+  portfolio:
+    output: true
+
+# Custom parent directory for all collections
+collections_dir: content_collections
+
+# Default attributes
+defaults:
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: portfolio-item
