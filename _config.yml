@@ -1,23 +1,21 @@
 # SITE CONFIGURATION
-title: Sleek # your site title
-author: GitHub User # You :P
+title: Tim Hoffmann # your site title
+author: Tim Hoffmann # You :P
 description: > # Meta description of Homepage
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/sleek" # the subpath of your site, e.g. /blog
-url: "https://janczizikow.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+  Online portfolio of Tim Hoffmann, programmer and producer. Digital games + digital media.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # SEO PLUGIN
 social:
-  name: Your Name
+  name: Tim Hoffmann
   links:
-    - https://twitter.com/BenBalter
-    - https://www.facebook.com/ben.balter
-    - https://www.linkedin.com/in/BenBalter
-    - https://plus.google.com/+BenBalter
-    - https://github.com/benbalter
-    - https://keybase.io/benbalter
+    - https://twitter.com/timdhoffmann
+#    - https://www.facebook.com/ben.balter
+    - https://www.linkedin.com/in/timdhoffmann
+#    - https://plus.google.com/+BenBalter
+    - https://github.com/timdhoffmann
+#    - https://keybase.io/benbalter
 
 # THEME SETTINGS
 navigation: # Navigation links
@@ -69,3 +67,19 @@ compress_html:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Custom collections
+collections:
+  portfolio:
+    output: true
+
+# Custom parent directory for all collections
+collections_dir: content_collections
+
+# Default attributes
+defaults:
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: portfolio-item
