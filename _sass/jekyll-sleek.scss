@@ -7,8 +7,7 @@
 
 // 2. Vendors
 @import
-  "vendor/normalize",
-  "vendor/breakpoint";
+  "vendor/normalize";
 
 // 3. Base
 @import
@@ -26,6 +25,7 @@
 @import
   "components/btn",
   "components/card",
+  "components/label",
   "components/pagination",
   "components/form",
   "components/modal",
