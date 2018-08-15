@@ -23,3 +23,16 @@ summary: "A quick 'how to' reference to get up and running with github, followin
 - Move assets, which should not yet be tracked by git to the *_IGNORED_BY_VS* folder.
 - Put *all assets needed for the project to work* under version control (Include re-downloadable assets, they might change in the future and become incompatible). 
 - You can keep the repository size down by only committing the files needed from asset packs.
+
+# Using Unity Smart Merge tool
+When you have file types configured to use the smart merge tool in .gitattributes (for example: `*.unity merge=unityyamlmerge eol=lf`), either select Smart Merge as the merge tool in your Git GUI client or set it per repository or for all repositories of a user by adding the following to <repository>/.git/config or the user's .gitconfig (Windows 10: C:\Users\<Username>\.gitconfig):
+```
+[merge]
+    tool = unityyamlmerge
+
+[mergetool "unityyamlmerge"]
+    trustExitCode = false
+    cmd = '<path to UnityYAMLMerge>' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+```
+On Windows, the path to UnityYAMLMerge, when using Unity Hub, is:
+`C:\Program Files\Unity\<Unity version>\Editor\Data\Tools\UnityYAMLMerge.exe`
