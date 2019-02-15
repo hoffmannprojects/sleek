@@ -4,22 +4,24 @@ title: About Me
 featured-img: tim
 ---
 
-Highly proactive and creative professional with interdisciplinary education and experience in the fields of technology, design and business in the media industry. 10 years’ experience in managing digital media projects including print, web, film/animation, music and software development. 3 years’ experience in a media agency. Over 6 years’ experience as a digital media producer in the highly digitalized, consumer- focused music industry. Experience in mobile game development in a small team. Lifelong learner. Exceptional at critical analysis and finding creative solutions for products, communication and workflows. Strong communicational and social skills.
+Highly proactive and creative professional with interdisciplinary education and experience in the fields of technology, design and business in the media industry. Strong communicational and social skills. Patient listener and observer. Lifelong learner. Exceptional at critical analysis and finding creative solutions for products, communication and workflows. 10 years’ experience in managing digital media projects including print, web, film/animation, music and software development. 3 years’ experience in a media agency. Over 6 years’ experience as a digital media producer in the highly digitalized, consumer-focused music industry. Experience in mobile game development in a small team.
 
 ## Proficient in:
 
+- Team Communication, Project Management
+- Game design and programming
+- Fully fluent in English & German in both speech and writing
+- Basic French
 - Unity
 - C#
 - Git
-- Awareness of the full stack in media production, from concept to realization to marketing
-- Team Communication, Project Management
-- Fully fluent in English & German in both speech and writing
 - Unreal Engine (currently upskilling) 
 - C++ (currently upskilling)
+- MS Office
 - Digital Audio Workstations (Cubase, Ableton Live, Logic)
 - Video Editing Software (Premiere, Final Cut)
 - Graphics Software (Photoshop, Illustrator, Sketch)
-- MS Office
+
 
 ## WORK EXPERIENCE
 

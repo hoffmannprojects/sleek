@@ -7,6 +7,6 @@
 layout: portfolio
 title: "Portfolio"
 title-subline: "Programmer &amp; Producer"
-logo-subline: "B.A. Digital Media"
+logo-subline: "M.A. Digital Games Student"
 description: "I'm a Programmer &amp; Producer with an interdisciplinary background, technological expertise and strong people skills. 10 years’ experience in digital media projects including print, web, video/animation, music and game development."
 ---
