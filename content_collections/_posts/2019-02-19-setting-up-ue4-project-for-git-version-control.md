@@ -10,13 +10,15 @@ summary: "A quick 'how to' reference to get up and running with github, followin
 2. Prepare it as the Git repository:
    1. _Initialize_ Unreal project folder _locally as git repo_ (can be done via Unreal directly, but manual gives more control regarding initial commit, .gitignore, etc., whereas Unreal directly commits some project files.).
    2. Add _.gitignore_ (use _custom .gitignore_ (preferred) or the .gitignore created by Unreal Engine).
-   3. (optional:) Initialize _LFS_ and add _.gitattributes_ (to enable lfs).
-   4. Commit all but the Unreal project files.
-   5. **Initialize Git-Flow** or create a “develop” branch manually.
-3. Checkout out the _develop_ branch.
-4. Commit the Unreal Project files.
-5. _Create a plain remote repository_ (no initial commit) on GitHub or other provider.
-6. Add _remote repository_ as a remote in local Git (connecting the two) and push.
+   3. Commit the _.gitignore_ file.
+   4. Set up ***LFS*** for large binary files:
+      1. Initialize Git LFS.
+      2. Add a *.gitattributes*.
+      3. Commit the _.gitattributes_ file.
+3. Commit the Unreal Project files (track binary files with LFS).
+4. **Initialize Git-Flow** or create a “develop” branch manually.
+6. _Create a plain remote repository_ (no initial commit) on GitHub or other provider.
+7. Add _remote repository_ as a remote in local Git (connecting the two) and push.
 
 # Tips for working with the project:
 

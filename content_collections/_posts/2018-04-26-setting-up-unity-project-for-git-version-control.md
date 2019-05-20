@@ -7,20 +7,21 @@ summary: "A quick 'how to' reference to get up and running with github, followin
 # Setup
 
 1. **Create a Unity project** (a folder with the project name will be created in the chosen location).
-2. Prepare it as the Git repository:
-   1. **Initialize** the Unity **project folder** locally as a git repo.
-   2. **Add** a custom ***.gitignore*** ([this is the one i use](https://github.com/hoffmannprojects/unity-gitignore){:target="_blank"}).
-   3. *(optional)* Create a special folder *_IGNORED_BY_VCS* and add it to gitignore (it's already included in my linked .gitignore).
-   4. *(optional)* **Enable *LFS*** by adding and committing a custom *.gitattributes* ([here is mine](https://github.com/hoffmannprojects/unity-gitattributes-for-lfs){:target="_blank"}). Best practice is to track by extension, not location (can cause trouble with meta files). Terrain files share the .asset extension with other assets, but remain binary, even if *Force Text* option is set. To avoid confusion, it is best to just track them with regular git.
-   5. Commit all but the Unity project files.
-   6. **Initialize Git-Flow** or create a “develop” branch manually.
-3. Checkout out the _develop_ branch.
-4. Prepare the Unity project:
+2. Prepare the Unity project:
    1. In _Unity_, go to *Edit > Project Settings > Editor* and Set:
        1. Version Control: *Visible Meta FIles*
        2. Asset Serialization: *Force Text*
        3. Line Endings for new Scripts: *OS Native*
-5. Commit the Unity project files.
+3. **Prepare it as the Git repository:**
+   1. **Initialize** the Unity **project folder** locally as a git repo.
+   2. **Add** a custom ***.gitignore*** ([this is the one i use](https://github.com/hoffmannprojects/unity-gitignore){:target="_blank"}).
+   3. Commit the _.gitignore_ file.
+   4. Set up ***LFS*** for large binary files: 
+      1. Initialize Git LFS.
+      2. Adding a custom *.gitattributes* ([here is mine](https://github.com/hoffmannprojects/unity-gitattributes-for-lfs){:target="_blank"}). Best practice is to track by extension, not location (can cause trouble with meta files). Terrain files share the .asset extension with other assets, but remain binary, even if *Force Text* option is set. To avoid confusion, it is best to just track them with regular git.
+      3. Commit the _.gitattributes_ file.
+4. Commit the Unity project files.
+5. **Initialize Git-Flow** or create a “develop” branch manually.
 6. Create a remote repository on GitHub or any other provider (empty, no readme, no initial commit).
 7. Add the remote repository as a remote to your local Git ("connect" it). When using LFS, use HTTPS instead of SSH!
 
