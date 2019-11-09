@@ -20,11 +20,11 @@ social:
 # THEME SETTINGS
 navigation: # Navigation links
   - {name: 'Home', link: '/'}
-  - {name: 'About', link: '/about'}
+  - {name: 'CV/About', link: '/about'}
   - {name: 'Contact', link: '/contact'}
 
 tagline: >
-  Online portfolio of Tim Hoffmann, programmer and producer. Digital games + digital media.
+  Online portfolio of Tim Hoffmann, video game producer and programmer.
 
 hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
