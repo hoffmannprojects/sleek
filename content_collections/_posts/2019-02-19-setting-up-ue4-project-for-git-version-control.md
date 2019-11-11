@@ -2,6 +2,7 @@
 layout: post
 title: Setting up a UE4 Project for Version Control with Git
 summary: "A quick 'how to' reference to get up and running with github, following best practices."
+featured-img: unreal-dark
 ---
 
 # Project Setup with Git

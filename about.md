@@ -4,7 +4,7 @@ title: About Me
 featured-img: tim
 ---
 
-Highly proactive and creative professional with interdisciplinary education and experience in the fields of technology, design and business in the media industry. Strong communicational and social skills. Patient listener and observer. Lifelong learner. Exceptional at critical analysis and finding creative solutions for products, communication and workflows. 10 years’ experience in managing digital media projects including print, web, film/animation, music and software development. 3 years’ experience in a media agency. Over 6 years’ experience as a digital media producer in the highly digitalized, consumer-focused music industry. Experience in mobile game development in a small team.
+Highly proactive professional with interdisciplinary education and experience in technology, design and business. Strong communicational and social skills. Patient listener and observer. Lifelong learner. Exceptional at critical analysis and finding creative solutions for products, communication and workflows. 10 years’ experience in managing digital media projects including video games, web, film/animation and music.
 
 ## Proficient in:
 
@@ -12,16 +12,16 @@ Highly proactive and creative professional with interdisciplinary education and 
 - Game design and programming
 - Fully fluent in English & German in both speech and writing
 - Basic French
+- Unreal Engine
+- C++
 - Unity
 - C#
+- Jira
 - Git
-- Unreal Engine (currently upskilling) 
-- C++ (currently upskilling)
 - MS Office
 - Digital Audio Workstations (Cubase, Ableton Live, Logic)
 - Video Editing Software (Premiere, Final Cut)
 - Graphics Software (Photoshop, Illustrator, Sketch)
-
 
 ## WORK EXPERIENCE
 
@@ -56,5 +56,6 @@ Highly proactive and creative professional with interdisciplinary education and 
 
 ## EDUCATION
 
-- **M.A. Digital Games**, Cologne Game Lab, institute of TH Koeln, present
-- **B.A. Digital Media**, Baden-Wuerttemberg Cooperative State University Mannheim, 2009
+- **_Master JMIN (Games and Interactive Digital Media)_ [Project Management]**, Cnam-Enjmin (École Nationale du Jeu et des Médias Interactifs Numériques), 2018-present
+- **_M.A. Digital Games_ [Programming & Game Design]**, Cologne Game Lab, institute of TH Koeln, 2018-present
+- **_B.A. Digital Media_**, Baden-Wuerttemberg Cooperative State University Mannheim, 2009
