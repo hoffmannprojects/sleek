@@ -2,15 +2,17 @@
 layout: post
 title: Setting up Jekyll for Github Pages on Windows 10
 summary: "This post has TL;DR character. Its purpose is to provide a quick 'how to' reference, which might be useful to others. No jokes or funny stories."
+featured-img: jekyll-github
 ---
 
-# Setting up Jekyll for Github Pages on Windows 10: 
-- Install the Windows Subsystem for Linux (WSL) with bash on Ubuntu. 
+# Setting up Jekyll for Github Pages with WSL on Windows 10
+
+- Install the Windows Subsystem for Linux (WSL) with bash on Ubuntu.
 - WSL is a separate environment (unlike git bash), intended for accessing Windows files from Linux, utilizing the new bash.exe (not the other way around!).
 - Windows drives are mounted under /mnt, so the C drive can be accessed with `cd /mnt/c`.
 - Tools installed in WSL (git for example) are independent from the Windows system.
 
-## (If not already installed) [Install the new Bash on Ubuntu](https://docs.microsoft.com/en-us/windows/wsl/install-win10){:target="_blank"} 
+## (If not already installed) [Install the new Bash on Ubuntu](https://docs.microsoft.com/en-us/windows/wsl/install-win10){:target="_blank"}
 
 (Requires Anniversary update, Windows build 16215, or later)
 
@@ -82,22 +84,14 @@ sudo apt autoremove
 jekyll -v
 ```
 
-## Install other dependencies: 
+### Install other dependencies
 
-1. Create a new repository (or use an existing Jekyll repository) and cd into it.
-
-2. Check, if Gemfile is present (used by Ruby to track your site's dependencies)
-```bash
-ls
-```
-
+1. Create a new repository (or use an existing Jekyll repository) and `cd` into it.
+2. Check, if Gemfile is present (used by Ruby to track your site's dependencies): `ls`
 3. Make sure, these lines are present in existing or newly created Gemfile:
-```
-source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
-```
-
-4. Install Jekyll and other dependencies via bundler
+   1. `source 'https://rubygems.org'`
+   2. `gem 'github-pages', group: :jekyll_plugins`
+4. Install Jekyll and other dependencies via bundler:
 
 ```bash
 bundle install
@@ -114,21 +108,21 @@ bundle install
 jekyll -v
 ```
 
-## [Optioinal] Install Node.Js and Gulp (required by the sleek theme, this website uses)
+### [Optioinal] Install Node.Js and Gulp (required by the sleek theme, this website uses)
 
-### Install Node version manager (nvm) via latest install command from [the official nvm github reposirotry](https://github.com/creationix/nvm){:target="_blank"}.
+#### Install Node version manager (nvm) via latest install command from [the official nvm github reposirotry](https://github.com/creationix/nvm){:target="_blank"}
 
 1. At the time of writing, the latest is: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash`
 2. Restart bash.
 3. Confirm by checking: `nvm --version`
 
-### Install node:
+#### Install node
 
 ```bash
 nvm install node
 ```
 
-### [Install gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started/1-quick-start.md){:target="_blank"} 
+#### [Install gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started/1-quick-start.md){:target="_blank"}
 
 If you've previously installed gulp globally, run npm rm --global gulp before following these instructions.
 
@@ -147,9 +141,9 @@ npm install --save-dev gulp@next
 npm install
 ```
 
-# Troubleshooting
+## Troubleshooting
 
-## `npm install` or `npm audit fix` throws an error `tar EPERM: operation not permitted, futime`
+### `npm install` or `npm audit fix` throws an error `tar EPERM: operation not permitted, futime`
 
 WSL needs to fix solutions according to [this guide](https://devblogs.microsoft.com/commandline/chmod-chown-wsl-improvements/)
 
@@ -160,7 +154,7 @@ sudo mount -t drvfs C: /mnt/c -o metadata,uid=1000,gid=1000,umask=22,fmask=111
 
 This mounts all files on the C drive as my user instead of root. Therefore `sudo` is not needed to run `npm i`
 
-## `npm install` throws an error that it is missing python
+### `npm install` throws an error that it is missing python
 
 ```bash
 # Install python2.7.
@@ -180,7 +174,7 @@ pipenv --python 2
 pipenv shell
 ```
 
-## Gulp throws an error like
+### Gulp throws an error like
 
 Error message:
 
@@ -201,7 +195,7 @@ Run
 npm i natives
 ```
 
-## Gulp throws an error about primordials
+### Gulp throws an error about primordials
 
 ```bash
 fs.js:27
@@ -211,7 +205,7 @@ const { Math, Object } = primordials;
 ReferenceError: primordials is not defined
 ```
 
-### Solution
+#### Solution
 
 Node 12+ and gulp 3 are incompatible! Downgrade node to 11.X.
 

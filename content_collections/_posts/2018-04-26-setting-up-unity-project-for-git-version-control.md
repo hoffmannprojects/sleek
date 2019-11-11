@@ -2,6 +2,7 @@
 layout: post
 title: Setting up a Unity project for version control with git
 summary: "A quick 'how to' reference to get up and running with github, following best practices."
+featured-img: unity-dark
 ---
 
 # Setup

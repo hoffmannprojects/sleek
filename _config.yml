@@ -20,7 +20,7 @@ social:
 # THEME SETTINGS
 navigation: # Navigation links
   - {name: 'Home', link: '/'}
-  - {name: 'CV/About', link: '/about'}
+  - {name: 'CV - About', link: '/about'}
   - {name: 'Contact', link: '/contact'}
 
 tagline: >
