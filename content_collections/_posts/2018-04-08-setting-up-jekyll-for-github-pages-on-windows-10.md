@@ -119,12 +119,12 @@ jekyll -v
 #### Install node
 
 ```bash
-nvm install node
+nvm install node 10 # Newer versions are not compatible as of writing
 ```
 
 #### [Install gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started/1-quick-start.md){:target="_blank"}
 
-If you've previously installed gulp globally, run npm rm --global gulp before following these instructions.
+If you've previously installed gulp globally, run `npm rm --global gulp` before following these instructions.
 
 ```bash
 # cd into your repository.
@@ -132,7 +132,7 @@ cd <repository/path>
 
 npm install --global gulp-cli
 
-npm install --save-dev gulp@next
+npm install --save-dev gulp
 
 # If you encounter warnings, run:
 # npm audit fix
@@ -143,7 +143,38 @@ npm install
 
 ## Troubleshooting
 
-### `npm install` or `npm audit fix` throws an error `tar EPERM: operation not permitted, futime`
+### Gulp Error ENOENT node-sass
+
+**Problem:**
+
+```bash
+Requiring external module babel-register
+fs.js:114
+    throw err;
+    ^
+
+Error: ENOENT: no such file or directory, scandir '/home/tim/Documents/GitHub/timdhoffmann.github.io/node_modules/node-sass/vendor'
+```
+
+**Solution:**
+
+Run `npm rebuild node-sass`
+
+### Gulp Error Chromium revision is not downloaded
+
+**Problem:**
+
+```bash
+UnhandledPromiseRejectionWarning: Error: Chromium revision is not downloaded. Run "npm install" or "yarn install" at Launcher.launch
+```
+
+**Solution:**
+
+Run `npm install puppeteer --unsafe-perm=true --allow-root` (Linux only).
+
+### Error when running `npm install` or `npm audit fix`
+
+Message: `tar EPERM: operation not permitted, futime`
 
 WSL needs to fix solutions according to [this guide](https://devblogs.microsoft.com/commandline/chmod-chown-wsl-improvements/)
 
@@ -205,7 +236,7 @@ const { Math, Object } = primordials;
 ReferenceError: primordials is not defined
 ```
 
-#### Solution
+**Solution:**
 
 Node 12+ and gulp 3 are incompatible! Downgrade node to 11.X.
 
