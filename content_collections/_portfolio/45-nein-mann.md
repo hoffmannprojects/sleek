@@ -7,13 +7,13 @@ permalink: /:collection/nein-mann/
 youtube-video-id: HBjDZMJUduo # (Last part of youtube url, after "v=")
 ---
 
-Over 37,000,000 views on YouTube.
+Over 40,000,000 views on YouTube.
 
-- Awards: 
-  - Golden Record, 
-  - VIVA Comet „Best Party song“,
-  - Raveline Readers Poll „Best Newcomer“,
-- Nominations: 
-  - ECHO „Best National Video“,
-  - VIVA Comet „Best Video“,
+- Awards:
+  - Golden Record
+  - VIVA Comet „Best Party song“
+  - Raveline Readers Poll „Best Newcomer“
+- Nominations:
+  - ECHO „Best National Video“
+  - VIVA Comet „Best Video“
   - 1LIVE KRONE „Best Song”
