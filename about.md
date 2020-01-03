@@ -65,7 +65,7 @@ Highly self-directed professional with interdisciplinary education and experienc
 
 ## PROFESSIONAL DEVELOPMENT
 
-- Udemy course **["Unreal Multiplayer Master: Online Game Development In C++"](https://www.udemy.com/course/unrealmultiplayer/){:target="_blank"}**
+- Udemy course **["Unreal Multiplayer Master: Online Game Development In C++",](https://www.udemy.com/course/unrealmultiplayer/){:target="_blank"}** present
 - Udemy course **“Unreal Engine C++ Developer Course”** [Certificate of Completion](https://www.udemy.com/certificate/UC-4HGQY9QE/){:target="_blank"}
 - Udemy course **“Complete C# Unity Developer”** [Certificate of Completion](https://www.udemy.com/certificate/UC-ZBJAK2VK/){:target="_blank"}
 - Udemy course **“C# Advanced Topics: Take Your C# Skills to the Next Level”** [Certificate of Completion](https://www.udemy.com/certificate/UC-IUM2ENAY/){:target="_blank"}
