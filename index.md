@@ -9,5 +9,5 @@ title: "Portfolio"
 subtitle: "I'm a Programmer &amp; Producer with an interdisciplinary background and strong people skills. 10 years’ experience in digital media projects, including game development, web, video/animation and music."
 title-subline: "Programmer &amp; Producer"
 logo-subline: "M.A. Digital Games Student"
-description: "I'm a Programmer &amp; Producer with an interdisciplinary background and strong people skills. 10 years’ experience in digital media projects, including game development, web, video/animation and music."
+description: "I'm a Project Manager &amp; Programmer with interdisciplinary education and experience in technology, design, and business. 10 years’ experience in managing digital media projects including video games, web, film/animation and music."
 ---
